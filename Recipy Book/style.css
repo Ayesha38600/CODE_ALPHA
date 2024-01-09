@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(rgb(255, 173, 255) , rgb(92, 92, 223));
+    color: white;
+    height: 100vh;
+}
+.logo{
+    text-align: center;
+    margin-top: 28px;
+    font-family: "Revitalis";
+    font-size: 35px;
+
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+
+}
+
+.searchBar input
+{
+    width: 400px;
+    height: 8px;
+    padding: 18px;
+    outline: none;
+    border-radius: 33px;
+    border: 1px solid rgb(196, 10, 196);
+    background-color: transparent;
+    color: rgb(101, 3, 75);font-family: "Revitalis";
+    font-size: 33px;
+}
+
+.searchBar button{
+    width: 60px;
+    height: 38px;
+    /* padding: 18px; */
+    border-radius: 22px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    background-color: #ed8cf5;
+    cursor: pointer;
+    margin-left: -33px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.category{
+    width: 600px;
+    height: 200px;
+    /* background-color: #ffffff; */
+    position: relative;
+    overflow: hidden;
+    margin: auto
+    ;
+    margin-top: 33px;
+    
+}
+.category .dishes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    gap: 7px; justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.dishes input{
+    width: 100px;
+    height: 33px;
+    background-color: #d987e1;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    /* margin: auto; */
+    border-radius: 22px;
+   
+}
+
+.category button{
+    position: relative;
+    top: 34px;
+    background-color: transparent;
+    font-size: 32px;
+    border: none;
+    color: white;
+}
+
+#nextBtn{
+    margin-left: 88%;
+    cursor: pointer;
+    cursor: pointer;
+    /* margin-top: 34px; */
+}
+#prevBtn{
+    padding: 11px;
+    /* margin-top: 12px; */
+    cursor: pointer;
+}
+
+/* js */
+.showMeal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    height: 440px;
+    background-color: #fff;
+    text-align: center;
+    margin-inline: 22px;
+    margin-top: 22px;
+    color: black;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+    border-radius: 5px;
+    /* margin-top: -22px; */
+    /* padding: 12px; */ font-family: "Revitalis";
+
+}
+
+img{
+    width: 100%; border-radius: 5px;
+    /* margin-top: 22px; */
+
+}
+
+p{
+    margin-top: 11px;
+    font-size: 32px;
+}
+
+.card button{
+    width: 130px;
+    height: 40px;
+    color: purple;
+    margin-top: 11px;
+    border: none;
+    background-color: #eb9bf5;font-family: "Revitalis";
+    border-radius: 5px;
+    font-size: 26px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" integrity="sha512-G8JE1Xbr0egZE5gNGyUm1fF764iHVfRXshIoUWCTPAbKkkItp/6qal5YAHXrxEu4HNfPTQs6HOu3D5vCGS1j3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <h1>AS       FLORIDA TIM</h1>
+        <ul>
+            <li><a href=""><i class="fa-solid fa-cube"></i>DASHBOARD</a></li>
+            <li><a href=""><i class="fa-brands fa-react"></i>ICONS</a></li>
+            <li><a href=""><i class="fa-solid fa-map"></i>MAPS</a></li>
+            <li><a href=""><i class="fa-solid fa-bell"></i>NOTIFICATIONS</a></li>
+            <li><a href=""><i class="fas fa-user"></i>USER PROFILE</a></li>
+            <li><a href=""><i class="fa-solid fa-table-list"></i>TABLE LIST</a></li>
+            <li><a href=""><i class="fa fa-text-height"></i>TYPOGRAPHY</a></li>
+
+            <div class="lastNav">
+                <li><a href=""><i class="fa-solid fa-cloud"></i>UPGRADE TO PRO</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="right">
+       <div class="upper">
+        <div class="dash">
+            <h2>DASHBOARD</h2>
+        </div>
+        <div class="inp">
+           <a href=""> <input type="text" placeholder="search..."><i class="fa-solid fa-magnifying-gass"></i></a>
+           <i class="fa-solid fa-moon" id="dark"></i>
+        </div> 
+       </div>
+       <div class="chart">
+        <canvas id="myChart"  width="500" >
+            
+        </canvas>
+    </div>
+   
+
+    </div>
+    <div class="pie">
+        <!-- <h1>Doghnut Visualization</h1> -->
+        <canvas id="myChartt" ></canvas>
+    </div>
+
+    <div class="cards">
+        <div class="crd">
+            <div class="cleft">
+                <h1>1217</h1>
+                <p>Students</p>
+            </div>
+            <div class="cright">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+        </div>
+        <div class="crd">
+            <div class="cleft">
+                <h1>42</h1>
+                <p>Teachers</p>
+            </div>
+            <div class="cright">
+                <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+        </div>
+        <div class="crd">
+            <div class="cleft">
+                <h1>68</h1>
+                <p>Employees</p>
+            </div>
+            <div class="cright">
+                <i class="fas fa-users"></i>
+            </div>
+        </div>
+        <div class="crd">
+            <div class="cleft">
+                <h1>4500</h1>
+                <p>Earnings</p>
+            </div>
+            <div class="cright">
+                <i class="fa-solid fa-money-bill"></i>
+            </div>
+        </div>
+    </div>
+   
+   
+  
+  
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

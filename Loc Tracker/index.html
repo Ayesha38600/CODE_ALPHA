@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Space Shuttle Location</title>
+    <style>
+        body{
+            background: url("https://t3.ftcdn.net/jpg/01/05/67/72/240_F_105677222_ZmfqeEA132PwExugSl0oC269YDUSv13L.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(255, 255, 255);
+
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Space Shuttle Current Location</h1>
+    <div id="location-info">
+        <p>Loading...</p>
+    </div>
+    <script>
+        async function fetchShuttleLocation() {
+            try {
+                const response = await fetch('http://api.open-notify.org/iss-now.json');
+                const data = await response.json();
+
+                if (response.ok) {
+                    const locationInfoElement = document.getElementById('location-info');
+                    const { latitude, longitude } = data.iss_position;
+
+                    // { latitude, longitude } is the destructuring syntax that extracts the latitude and longitude properties from data.iss_position
+
+                    locationInfoElement.innerHTML = `
+                        <p>Latitude: ${latitude}</p>
+                        <p>Longitude: ${longitude}</p>
+                    `;
+                } else {
+                    console.error('Failed to fetch shuttle location');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        window.addEventListener('load', () => {
+            fetchShuttleLocation();
+            setInterval(fetchShuttleLocation, 10000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+nav{
+    height: 100vh;
+    position: fixed;
+    display: block;
+    /* height: auto; */
+    width: 280px;
+    background-color:#ef5f30;
+    color: white;
+    top: 0;
+}
+
+li{
+    list-style: none;
+    /* line-height: 1.5; */
+    margin-top: 44px;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav h1{
+    text-align: center;
+    border-bottom: 1px solid rgb(233, 215, 215);
+    padding: 22px;
+    width: 200px;
+    margin-left: 18px;
+    font-size: 17px;
+}
+i{
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.lastNav{
+   padding-top: 75px;
+   font-size: 11px;
+   font-weight: 500;
+}
+
+.right{
+    height: 60vh;
+    width: 1320px;
+    background:linear-gradient(rgb(3, 3, 87) , rgb(42, 40, 64)) ;
+    color: white;
+    position: absolute;
+    left: 280px;
+    margin-bottom: 300px;
+}
+.container{
+    display: flex;
+    position: relative;
+
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+input{
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    /* border: 1px solid rgb(255, 255, 255); */
+    height: 30px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+}
+
+.dash h2{
+    font-size: 15px;
+}
+
+.inp a i{
+/* font-size: 30px; */
+padding-top: 12px;
+}
+
+.chart{
+    height: 10vh;
+    width: 50vw;
+    /* color: rgb(164, 234, 234); */
+    color: white;
+    font-weight: 2000;
+    margin-left: 30px;
+   margin-top: -30px;
+
+
+}
+.pie{
+    width: 400px;
+    height: 300px;
+    /* background-color: aqua; */
+    /* border: 1px solid rgb(91, 88, 109); */
+    /* padding: 7px; */
+    border-radius: 4px;
+    position: absolute;
+    left: 1150px;
+    top: 124px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+}
+
+.cards{
+    /* background-color: #0e9e21; */
+    position: relative;
+    width: 1320px;
+    height: 300px;
+    display: block;
+    left: 280px;
+    top: 60vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.crd{
+    background:linear-gradient(rgb(3, 3, 87) , rgb(42, 40, 64)) ;
+    width: 270px;
+    height: 140px;
+    margin-inline: 13px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 1);
+
+}
+.crd i{
+    margin-top: 30px;
+    font-size: 45px;
+}
+
+#myChartt{
+
+    padding-top: 60px;
+}
+.pie h1{
+    font-size: 18px;
+}
+
+/* js */
+.active{
+
+    background-color: black;
+   }
+   
